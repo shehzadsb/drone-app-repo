@@ -327,6 +327,11 @@ public class Drone {
 			throw new ServiceException("Problem with as one or more engines are down. Preparing to land.");
 		}
 		
+		//As a result of tap these coordinates changes randomly
+		x += 15;
+		y += 11;
+		z -= 5;
+		
 		stabilize();
 		
 		this.setDroneStatus(DroneStatus.HOVERING);
