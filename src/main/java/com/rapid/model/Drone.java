@@ -331,6 +331,8 @@ public class Drone {
 		x += 15;
 		y += 11;
 		z -= 5;
+		pitch += 1;
+		rollLeft += 2;
 		
 		stabilize();
 		
